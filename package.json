@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsdoc": "^4.0.2",
+    "mongodb": "^6.5.0",
+    "node": "^18.20.1"
+  }
+}

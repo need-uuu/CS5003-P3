@@ -1,0 +1,11 @@
+total 456
+-rw-r--r--    1 moxingxing  staff    9514  4  4 21:05 algorithm.js
+-rw-r--r--    1 moxingxing  staff   20585  4  5 12:30 main.js
+-rw-r--r--    1 moxingxing  staff    2868  4  5 12:32 main.test.js
+-rw-r--r--    1 moxingxing  staff    8273  4  5 12:30 main.testBackup.js
+drwxr-xr-x  208 moxingxing  staff    6656  4  4 21:07 node_modules
+drwxr-xr-x   11 moxingxing  staff     352  4  5 12:30 out
+-rw-r--r--    1 moxingxing  staff       0  4  5 12:40 output.txt
+-rw-r--r--    1 moxingxing  staff  169048  4  5 12:30 package-lock.json
+-rw-r--r--    1 moxingxing  staff     438  4  5 12:36 package.json
+-rw-r--r--    1 moxingxing  staff      46  4  5 12:30 server.js

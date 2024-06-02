@@ -1,0 +1,412 @@
+/* Header */
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Techno'
+}
+
+h1{
+  font-family:"Techno";  
+  font-size: 52px;
+  color: antiquewhite;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+  text-transform: uppercase; 
+  letter-spacing: 3px;    
+}
+
+h2 {
+  font-family: "Techno";
+  font-size: xx-large;
+  color: #000;
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 0, 0.5);
+  transform: translateY(-50%) rotate(-2deg);
+  border-radius: 0.2em;
+}
+
+#userLocation {
+  position: relative;
+  display: inline-block;
+  padding: 0 0.5em; 
+  margin-top: 20px;
+  font-family: "Techno";
+}
+
+#userLocation::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(135, 206, 250, 0.5);
+  border-radius: 0.2em;
+  height: 100%;
+}
+
+/* button */
+
+#sortRuns {
+  margin: 1%;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  white-space: nowrap;
+}
+
+#sortRuns:active {
+  scale: 0.92;
+}
+
+#sortRuns:hover:not(:disabled) {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+#sortRuns:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  -webkit-box-reflect: none;
+}
+
+/* body */
+
+.mapboxgl-ctrl, .mapboxgl-ctrl-logo{
+  display: none !important
+}
+
+#joinRunPage {
+  justify-content: center;
+  text-align: center;
+}
+
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+  /* background-image: url("https://i0.wp.com/www.3wallpapers.fr/wp-content/uploads/2014/10/Running-Women-3Wallpapers-iphone-Parallax.jpg?ssl=1"); */
+  /* background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/04/running-wallpaper-download-full-14.jpg"); */
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/04/running-wallpaper-for-pc.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#main-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-right: 10%;    
+  padding: 1rem; 
+}
+
+#cards_feed {
+  margin: 25%;
+  margin-top: 0;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto auto auto auto;
+  column-gap: 24px;
+  row-gap: 12px;
+  border-radius: 24px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid 
+  rgba(17, 91, 201, 0.87);
+  padding: 24px;
+  margin-top: 24px;
+  font-family:"Techno";  
+}
+
+.card_weather {
+  grid-column: 1 / 6;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.card_weather p { 
+  flex: 1;
+  margin: 0;
+  margin-bottom: 6px;
+  position: relative; 
+}
+
+.card_score {
+  grid-column: 6 / 7;
+  text-align: right;
+}
+
+.card_map {
+  grid-column: 1 / 4;
+}
+
+.card_content {
+  grid-column: 4/ 7;
+
+}
+
+.card_content > p {
+  margin-top: 0;
+}
+
+.card_overlay {
+  display: flex;
+  grid-column: 1 / 6;
+  align-content: flex-start;
+}
+
+.card_signup {
+  grid-column: 6/ 7;
+  text-align: right;
+}
+
+.previous_comments_div {
+  grid-column: 1 / 7;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.individual_comments_div {
+  grid-column: 1 / 7;
+}
+
+.map-popup .mapboxgl-popup-content {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.mapboxgl-canvas {
+  border-radius: 12px;
+  border: 1px solid rgb(46, 193, 238)  ;
+}
+
+.participantButton {
+  margin-left: 6.2rem;
+}
+
+/* Navigation bar */
+#sidebar {
+  position: fixed;
+  text-align: left;
+  padding-left: 1%;
+  font-family: 'SpeedrushRegular';
+  font-size: large;
+  top: 0; 
+  right: 0; 
+  width: 300px; 
+  height: 100%;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1); 
+  z-index: 1000; 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 10px; 
+  text-decoration: none; 
+  color: #333; 
+  border-bottom: 1px solid #eee; 
+}
+
+#sidebar ul li a:hover {
+  background-color: #eee;
+  font-family: 'SpeedrushItalic'; 
+}
+
+ /*------------------------ comment styling */
+
+.comment-container {
+  /* padding: 2px; */
+  margin: 0;
+}
+
+.comment-header {
+  font-size: 10px; 
+  color: grey;
+  padding: 2px;
+  margin: 0;
+}
+
+.comment-paragraph {
+  font-size: 12px; 
+  padding: 2px;
+  margin: 0;
+}
+
+.comment-linebreak {
+  padding: 2px;
+  margin: 0;
+  border: none;
+  border-top: 1px solid grey;
+}
+
+.comment_field {
+  height: 35px;
+  border-radius: 5px;
+  margin-top: 6px;
+}
+
+/* participant section */
+
+.participantPopup {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  padding: 10px;
+  z-index: 999;
+  width: fit-content; 
+}
+
+.participantPopup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participantPopup li {
+  margin-bottom: 5px;
+}
+
+.participantPopup {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.participantButton, .button {
+  /* font-size: 0.9rem; */
+  padding: 0.5rem 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color:rgba(255, 183, 107, 1);
+  color: rgb(50, 21, 11);
+  font-weight: 700;
+  transition: all 0.6s ease; 
+  box-shadow: 0px 0px 60px rgba(255, 183, 107, 0.5);
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(255, 183, 107, 0.1));
+}
+
+.participantButton:active, .button:active{
+  transform: scale(0.92);
+}
+
+.participantButton:hover, .button:hover {
+  background: linear-gradient(270deg, rgba(255, 183, 107, 0.8) 0%, rgba(245, 203, 147, 0.8) 100%);
+  color: rgb(4, 4, 38);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+
+}
+
+.button {
+  margin-left: 5px;
+}
+
+.signupButton {
+    padding: 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+    white-space: nowrap;
+    margin-top: 6%;
+  }
+
+.signupButton:active {
+  scale: 0.92;
+}
+
+.signupButton:hover:not(:disabled) {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+.signupButton:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  -webkit-box-reflect: none;
+}
+
+ /*------------------------ font */
+ 
+ @font-face {
+  font-family: 'Techno';
+  src: url('style/techno.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpaceMission';
+  src: url('style/SpaceMission.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushRegular';
+  src: url('style/SpeedrushRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushItalic';
+  src: url('style/SpeedrushItalic.otf') format('opentype');
+}

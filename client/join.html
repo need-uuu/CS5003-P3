@@ -1,0 +1,41 @@
+<!-- CS5003 Masters Programming Projects - HTML Join Run Page
+Coursework P3: Social Runner -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="join.css">
+    <script type= "module" src="./join.js"></script>
+    <title>CS5003 | Practical 3</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+  <div id = "main-content">
+    <header>
+        <h1>Join upcoming runs</h1>
+        <h2>Run whenever you want!</h2> 
+    </header>
+    <div id="welcomeMessage"></div>
+    <section id="joinRunPage">
+        <button id="sortRuns">Sort Runs Based On Your Preferences</button>
+        <div id="userLocation"></div>
+    </section>              
+        <!--Card start-->
+        <div class ="cards" id="cards_feed">
+          <!-- cards will be dynamically inserted here -->
+        </div>
+
+    <!--Navigation bar-->
+    <nav id="sidebar">
+      <ul>
+        <li><a href="join.html">Join Upcoming Run</a></li>
+        <li><a href="start.html">Create New Run</a></li>
+        <li><a href="profile.html">Open Profile</a></li>
+        <li><a href="index.html">Logout</a></li>
+      </ul>
+    </nav>
+</body>
+</html>

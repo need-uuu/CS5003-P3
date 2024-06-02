@@ -1,0 +1,298 @@
+/* header */
+body {
+
+  flex-direction: column;
+
+  background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/04/running-wallpaper-free-download-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+h1{
+  font-family:"Techno";  
+  font-size: 52px;
+  color: antiquewhite;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+  text-transform: uppercase; 
+  letter-spacing: 3px;    
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Techno'
+}
+
+h2 {
+  font-family: "Techno";
+  font-size: xx-large;
+  color: #000;
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50%;
+  background-color: rgba(255, 255, 0, 0.5);
+  transform: translateY(-50%) rotate(-2deg);
+  border-radius: 0.2em;
+}
+
+#main-content {
+  flex-grow: 1; 
+  display:flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-right: 10%;    
+  padding: 10px; 
+}
+
+#container {
+  padding: 15px;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 235, 215, 0.8); 
+  font-family:"Techno";  
+  margin-bottom: 12%;
+  margin-top: 2%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin-right: 7%;
+}
+
+#your-information,  #running-partner-div, #histogram-div {
+  padding: 15px;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 235, 215, 0.8); 
+  font-family:"Techno";  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+
+
+#histogram-div {
+  /* display: flex; */
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+
+}
+
+select {
+    font-family:"Techno"; 
+    font-weight: 700;
+    color: #030127e7;
+    margin-top: 3%;
+    padding: 0.3rem 0.3rem; 
+    border: 1px solid #d2b48c; 
+    background-color: #fff; 
+    border-radius: 0.2rem; 
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s, box-shadow 0.3s; 
+    margin-left: 5px;
+}
+
+
+/* Calendar classes */
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 3px;
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+  background-color: #E6E6E6;
+}
+
+.upcoming-event {
+  background-color: green;
+}
+
+.finished-event {
+  background-color: grey;
+}
+
+#calendar {
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+
+}
+
+
+
+#calendar form {
+  margin-top: 1rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#calendar form > div {
+  margin: 0 1rem; 
+}
+
+select {
+  padding: 0.5rem 1rem; 
+  transition: transform 0.3s ease; 
+}
+
+select:hover {
+  transform: scale(1.1); 
+}
+
+#calendar-table {
+  font-size: 0.9rem; 
+  margin-top: 15px;
+
+}
+
+table {
+  border-collapse: separate; 
+  border-spacing: 0 0.5rem; 
+  background-color: #fff; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem; 
+  overflow: hidden; 
+}
+
+th, td {
+  border: none; 
+  padding: 0.5rem 1rem; 
+}
+
+th {
+  background-color: #f5f5f5; 
+  color: #333; 
+  text-transform: uppercase; 
+  letter-spacing: 0.05em;
+}
+
+.upcoming-event {
+  background-color: #4caf50; 
+  color: #fff; 
+}
+
+.finished-event {
+  background-color: #bdbdbd; 
+  color: #fff;
+}
+
+.tooltip2 {
+  position: relative;
+  top: -50px;
+}
+
+/* source: https://www.w3schools.com/css/css_tooltip.asp  */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  display: none;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 5px;
+  position: fixed; 
+  bottom: 25.5%; 
+  left: 18.9%;
+  transform: translateX(-50%);
+  max-width: 340px;
+  white-space: normal;
+}
+
+.tooltip:hover .tooltiptext {
+  display: inline-block; 
+}
+
+table {
+  margin-left: 50px;
+}
+
+
+
+/* Navigation bar */
+#sidebar {
+  position: fixed;
+  text-align: left;
+  padding-left: 1%;
+  font-family: 'SpeedrushRegular';
+  font-size: large;
+  top: 0; 
+  right: 0; 
+  width: 300px; 
+  height: 100%;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1); 
+  z-index: 1000; 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 10px; 
+  text-decoration: none; 
+  color: #333; 
+  border-bottom: 1px solid #eee; 
+}
+
+#sidebar ul li a:hover {
+  background-color: #eee;
+  font-family: 'SpeedrushItalic'; 
+}
+/*------------------------ font */
+
+@font-face {
+  font-family: 'Techno';
+  src: url('style/techno.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpaceMission';
+  src: url('style/SpaceMission.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushRegular';
+  src: url('style/SpeedrushRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushItalic';
+  src: url('style/SpeedrushItalic.otf') format('opentype');
+}

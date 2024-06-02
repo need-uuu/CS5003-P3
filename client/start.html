@@ -1,0 +1,41 @@
+<!-- CS5003 Masters Programming Projects - HTML Start Run Page
+Coursework P3: Social Runner -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="start.css">
+    <script type= "module" src="./start.js"></script>
+    <!-- Link to mapBox -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+    <title>CS5003 | Practical 3</title>
+</head>
+<body>
+  <div id = "main-content">
+    <header>
+        <h1>Create New Run</h1>
+        <h2>Run anywhere you want!</h2> 
+    </header>
+    <div id="container">
+      <div id='map' style='width: 400px; height: 300px;'></div>
+      <div id="distance"></div>
+      <section id="startRunPage">
+          <!-- <p>Start Run Page</p>  -->
+      </section>
+    </div>
+  </div>
+      <!--Navigation bar-->
+      <nav id="sidebar">
+        <ul>
+          <li><a href="join.html">Join Upcoming Run</a></li>
+          <li><a href="start.html">Create New Run</a></li>
+          <li><a href="profile.html">Open Profile</a></li>  
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav>
+      <!--Navigation bar end--> 
+</body>
+</html>

@@ -1,0 +1,52 @@
+# README FILE
+
+## INSTRUCTIONS ON HOW TO RUN SERVER AND DATABASE
+
+Make sure to add your config-db.js file to your local repository. This will not be pushed since the name is already included in the .gitignore file.
+
+Ensure you are in the server folder (working directory):
+ - cd server 
+
+Install packages:
+- npm install node 
+- npm install express
+- npm install mongodb 
+
+Add your config-db.js file (only relevant for first time)
+database: 'socialrunning',
+runs: 'runs',
+users: 'users'
+
+When running the server, make sure to first initialize the database. If this is the first time initializing the database, ensure to populate it with dummy data first (see section below):
+$HOME/Documents/mongodb/bin/mongod --dbpath $HOME/Documents/mongodb_data --logpath=$HOME/Documents/mongodb/mongodb.log --auth --port $(id -u) &
+
+Start the server (need to be within server folder):
+node server.js 
+
+Navigate to localhost:24980/index.html in order to test the application. 
+
+In order to test the application, please find a user and username from the DAO file for dummy users. Registering your own account will result in an empty feed and profile page as no runs will be populated for the user. 
+
+## INSTRUCTIONS ON HOW TO INSERT DUMMY DATA INTO THE DATABASE
+
+When initializing the database for the first time, dummy data must be populated. This can be done in the following way:
+
+ - Access the DAO script file before running the server.js script 
+ - Uncomment lines 538-546 which tells the script to loop through the user and run arrays and insert each object as a new document in the "runs" and "users" collections 
+ - Initiate the server and database by running the command "node server.js"
+ - Once data has been inserted into the database, make sure to comment the lines above if initializing the database again, as otherwise the appication will throw a duplication error 
+ - If needed, lines 556-565 can be uncommented in order to drop all collections and documents from the database. Afterwards, the database can then be initialized and dummy data populated according to the above steps
+
+## TROUBLESHOOTING THE SERVER AND DATABASE
+
+If you get an error message saying that a certain library from node cannot be found:
+
+For example "Cannot find module mongodb" or "express-session".
+
+This means the package is not included in your node_modules folder in either the "data" or the "server" folder.
+
+Open the node_modules folder in "data" and "server" to check if the folder is there (for example "mongodb"). 
+ - If the folder is not there, navigate to the given folder using the terminal 
+ - Use npm install XXX replacing XXX with the folder that is missing 
+
+Return back to the server folder and run the "node server.js" command.

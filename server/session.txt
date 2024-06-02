@@ -1,0 +1,321 @@
+Script started on Fri Apr  5 12:41:08 2024
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 server % [K[?2004hrrunnpm run test[12Dcd server   [9Dgit pull [8Dcd server[9Dnpm run test[?2004l
+
+> test
+> mocha main.test.js
+
+
+[0m[0m
+[0m  POST /registerUser[0m
+Dummy data successfully inserted into database
+Database collections initialized
+Listening on localhost: 24980
+[
+  {
+    _id: [33m1[39m,
+    participants: [ [32m'ethan2000'[39m, [32m'luk3'[39m ],
+    startDateTime: [32m'2024-04-01T09:00'[39m,
+    averagePace: [32m'05:30'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m1[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m, [36m[Array][39m ],
+    distancesToEnd: [ [33m12.8[39m, [33m10[39m, [33m5.7[39m ],
+    description: [32m'Fast morning run'[39m,
+    totalElevation: [33m50[39m,
+    totalDistance: [33m12.8[39m,
+    participantDistance: [ [33m12.8[39m, [33m12.8[39m ],
+    runDifficulty: [33m75[39m
+  },
+  {
+    _id: [33m10[39m,
+    participants: [ [32m'alice88'[39m, [32m'soph'[39m ],
+    startDateTime: [32m'2024-04-11T09:06'[39m,
+    averagePace: [32m'06:30'[39m,
+    comments: [],
+    status: [33m0[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m12[39m, [33m8.5[39m ],
+    description: [32m'Sea side run'[39m,
+    totalElevation: [33m10[39m,
+    totalDistance: [33m12[39m,
+    participantDistance: [ [33m12[39m, [33m12[39m ],
+    runDifficulty: [33m43[39m
+  },
+  {
+    _id: [33m3[39m,
+    participants: [ [32m'emz'[39m, [32m'soph'[39m, [32m'ethan2000'[39m ],
+    startDateTime: [32m'2024-04-01T11:00'[39m,
+    averagePace: [32m'07:30'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m1[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m15.2[39m, [33m8[39m ],
+    description: [32m'City run'[39m,
+    totalElevation: [33m150[39m,
+    totalDistance: [33m15.2[39m,
+    participantDistance: [ [33m15.2[39m, [33m15.2[39m, [33m15.2[39m ],
+    runDifficulty: [33m60[39m
+  },
+  {
+    _id: [33m4[39m,
+    participants: [ [32m'joe'[39m, [32m'alice88'[39m ],
+    startDateTime: [32m'2024-04-01T08:30'[39m,
+    averagePace: [32m'04:45'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m1[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m8.4[39m, [33m6[39m ],
+    description: [32m'Sprint training'[39m,
+    totalElevation: [33m400[39m,
+    totalDistance: [33m8.4[39m,
+    participantDistance: [ [33m8.4[39m, [33m8.4[39m ],
+    runDifficulty: [33m43[39m
+  },
+  {
+    _id: [33m2[39m,
+    participants: [ [32m'luk3'[39m, [32m'jooe'[39m, [32m'emz'[39m, [32m'soph'[39m, [32m'johnDoe'[39m ],
+    startDateTime: [32m'2024-03-28T10:00'[39m,
+    averagePace: [32m'06:00'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m1[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m12.2[39m, [33m10[39m ],
+    description: [32m'Riverside run'[39m,
+    totalElevation: [33m80[39m,
+    totalDistance: [33m12.2[39m,
+    participantDistance: [ [33m12.2[39m, [33m12.2[39m, [33m12.2[39m, [33m12.2[39m, [33m12.2[39m ],
+    runDifficulty: [33m25[39m
+  },
+  {
+    _id: [33m5[39m,
+    participants: [ [32m'emz'[39m, [32m'jooe'[39m ],
+    startDateTime: [32m'2024-04-02T07:00'[39m,
+    averagePace: [32m'05:15'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m1[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m11.2[39m, [33m6[39m ],
+    description: [32m'Out in the nature'[39m,
+    totalElevation: [33m320[39m,
+    totalDistance: [33m11.2[39m,
+    participantDistance: [ [33m11[39m, [33m2[39m, [33m11[39m, [33m2[39m ],
+    runDifficulty: [33m54[39m
+  },
+  {
+    _id: [33m6[39m,
+    participants: [ [32m'luk3'[39m ],
+    startDateTime: [32m'2024-04-05T11:30'[39m,
+    averagePace: [32m'06:15'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m0[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m13.8[39m, [33m9[39m ],
+    description: [32m'Favorite run Edinburgh'[39m,
+    totalElevation: [33m40[39m,
+    totalDistance: [33m13.8[39m,
+    participantDistance: [ [33m13.8[39m ],
+    runDifficulty: [33m65[39m
+  },
+  {
+    _id: [33m7[39m,
+    participants: [ [32m'ethan2000'[39m, [32m'max05'[39m ],
+    startDateTime: [32m'2024-04-06T09:06'[39m,
+    averagePace: [32m'07:30'[39m,
+    comments: [ [36m[Object][39m ],
+    status: [33m0[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m, [36m[Array][39m ],
+    distancesToEnd: [ [33m13.8[39m, [33m9[39m, [33m4[39m ],
+    description: [32m'Beginner friendly run for everyone'[39m,
+    totalElevation: [33m60[39m,
+    totalDistance: [33m10.5[39m,
+    participantDistance: [ [33m10.5[39m, [33m10.5[39m ],
+    runDifficulty: [33m32[39m
+  },
+  {
+    _id: [33m8[39m,
+    participants: [ [32m'emz92'[39m ],
+    startDateTime: [32m'2024-04-07T09:06'[39m,
+    averagePace: [32m'07:30'[39m,
+    comments: [],
+    status: [33m0[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m ],
+    distancesToEnd: [ [33m9.5[39m, [33m8[39m ],
+    description: [32m'City center run'[39m,
+    totalElevation: [33m40[39m,
+    totalDistance: [33m9.5[39m,
+    participantDistance: [ [33m9.5[39m ],
+    runDifficulty: [33m12[39m
+  },
+  {
+    _id: [33m9[39m,
+    participants: [ [32m'sammyS'[39m ],
+    startDateTime: [32m'2024-04-06T04:18'[39m,
+    averagePace: [32m'04:15'[39m,
+    comments: [],
+    status: [33m0[39m,
+    routePoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    meetingPoints: [ [36m[Array][39m, [36m[Array][39m, [36m[Array][39m ],
+    distancesToEnd: [ [33m11.8[39m, [33m10.1[39m, [33m8.5[39m, [33m6.6[39m ],
+    description: [32m'Run for professionals'[39m,
+    totalElevation: [33m10[39m,
+    totalDistance: [33m11.8[39m,
+    participantDistance: [ [33m11.8[39m ],
+    runDifficulty: [33m86[39m
+  }
+]
+  [31m  1) should get run 8[0m
+  [31m  2) should not get run -1[0m
+query from database side { _id: [32m'ethan2000'[39m }
+  [32m  [32m✔[39m[0m[90m should not register a user when the username already exists[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (96ms)[0m
+[31m  2 failing[0m
+
+[0m  1) POST /registerUser
+       should get run 8:
+[0m[31m     Error: expected 200 "OK", got 404 "Not Found"[0m[90m
+      at Context.<anonymous> (main.test.js:40:14)
+      at process.processImmediate (node:internal/timers:476:21)
+  ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:252:14)
+      at /Users/moxingxing/Desktop/project/cs5003-p3/server/node_modules/supertest/lib/test.js:308:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:285:13)
+      at Test.assert (node_modules/supertest/lib/test.js:164:23)
+      at localAssert (node_modules/supertest/lib/test.js:120:14)
+      at /Users/moxingxing/Desktop/project/cs5003-p3/server/node_modules/supertest/lib/test.js:125:7
+      at Request.callback (node_modules/superagent/lib/node/index.js:867:3)
+      at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/index.js:1070:18)
+      at IncomingMessage.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[0m
+[0m  2) POST /registerUser
+       should not get run -1:
+[0m[31m     Error: expected 400 "Bad Request", got 404 "Not Found"[0m[90m
+      at Context.<anonymous> (main.test.js:55:14)
+      at process.processImmediate (node:internal/timers:476:21)
+  ----
+      at Test._assertStatus (node_modules/supertest/lib/test.js:252:14)
+      at /Users/moxingxing/Desktop/project/cs5003-p3/server/node_modules/supertest/lib/test.js:308:13
+      at Test._assertFunction (node_modules/supertest/lib/test.js:285:13)
+      at Test.assert (node_modules/supertest/lib/test.js:164:23)
+      at localAssert (node_modules/supertest/lib/test.js:120:14)
+      at /Users/moxingxing/Desktop/project/cs5003-p3/server/node_modules/supertest/lib/test.js:125:7
+      at Request.callback (node_modules/superagent/lib/node/index.js:867:3)
+      at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/index.js:1070:18)
+      at IncomingMessage.emit (node:events:529:35)
+      at endReadableNT (node:internal/streams/readable:1400:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+[0m
+
+
+cd ..     ^C
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 server % [K[?2004hccd ..[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 cs5003-p3 % [K[?2004hggit add .[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 cs5003-p3 % [K[?2004hggit commit -m ""a"d"d" "n"e"w" "t"e"s"t" "f"i"l"e"."[1C[?2004l
+[master 2778838] add new test file.
+ 6 files changed, 845 insertions(+), 59 deletions(-)
+ create mode 100644 client/algorithm.html
+ create mode 100644 client/join css.txt
+ create mode 100644 server/output.txt
+ create mode 100644 server/session.txt
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 cs5003-p3 % [K[?2004hggit push[?2004l
+Enter passphrase for key '/Users/moxingxing/.ssh/id_rsa': 
+Enumerating objects: 15, done.
+Counting objects:   6% (1/15)Counting objects:  13% (2/15)Counting objects:  20% (3/15)Counting objects:  26% (4/15)Counting objects:  33% (5/15)Counting objects:  40% (6/15)Counting objects:  46% (7/15)Counting objects:  53% (8/15)Counting objects:  60% (9/15)Counting objects:  66% (10/15)Counting objects:  73% (11/15)Counting objects:  80% (12/15)Counting objects:  86% (13/15)Counting objects:  93% (14/15)Counting objects: 100% (15/15)Counting objects: 100% (15/15), done.
+Delta compression using up to 8 threads
+Compressing objects:  10% (1/10)Compressing objects:  20% (2/10)Compressing objects:  30% (3/10)Compressing objects:  40% (4/10)Compressing objects:  50% (5/10)Compressing objects:  60% (6/10)Compressing objects:  70% (7/10)Compressing objects:  80% (8/10)Compressing objects:  90% (9/10)Compressing objects: 100% (10/10)Compressing objects: 100% (10/10), done.
+Writing objects:  10% (1/10)Writing objects:  20% (2/10)Writing objects:  30% (3/10)Writing objects:  40% (4/10)Writing objects:  50% (5/10)Writing objects:  60% (6/10)Writing objects:  70% (7/10)Writing objects:  80% (8/10)Writing objects:  90% (9/10)Writing objects: 100% (10/10)Writing objects: 100% (10/10), 7.76 KiB | 3.88 MiB/s, done.
+Total 10 (delta 5), reused 1 (delta 0), pack-reused 0
+To ssh://hw221.teaching.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-group-02/cs5003-p3
+   f39764b..2778838  master -> master
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 cs5003-p3 % [K[?2004hgit push[?2004l
+Enter passphrase for key '/Users/moxingxing/.ssh/id_rsa': 
+Everything up-to-date
+[1m[7m%[27m[1m[0m                                                                                                                                                         [0m[27m[24m[J(base) moxingxing@YAMINLI-MB0 cs5003-p3 % [K[?2004hGGIT G  ggit log[?2004l
+[?1h=[33mcommit 2778838a594b933192cc891cafa835be206edd62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: hw221 <hw221@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:43:11 2024 +0100[m
+[m
+    add new test file.[m
+[m
+[33mcommit f39764bdb963d9fc2a499b6420402ae5faba7d7e[m[m
+Author: Heejoo Shin <hs265@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:16:03 2024 +0100[m
+[m
+    .[m
+[m
+[33mcommit 65c8508449bde4952a58d63696306fc26cba21f9[m[m
+Author: lsk5 <lsk5.teaching.cs.st-andrews.ac.uk>[m
+Date:   Fri Apr 5 11:36:23 2024 +0100[m
+[m
+    debugging weather[m
+[m
+[33mcommit c88af87cd7e4832f3a14ca79e01ce835e5ed9bcf[m[m
+Merge: ec98567 ded86d7[m
+Author: Andreas Weisberg <anw4@st-andrews.ac.uk>[m
+:[K[H[2J[H[H[2J[H[33mcommit 2778838a594b933192cc891cafa835be206edd62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: hw221 <hw221@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:43:11 2024 +0100[m
+[m
+    add new test file.[m
+[m
+[33mcommit f39764bdb963d9fc2a499b6420402ae5faba7d7e[m[m
+Author: Heejoo Shin <hs265@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:16:03 2024 +0100[m
+[m
+    .[m
+[m
+[33mcommit 65c8508449bde4952a58d63696306fc26cba21f9[m[m
+Author: lsk5 <lsk5.teaching.cs.st-andrews.ac.uk>[m
+Date:   Fri Apr 5 11:36:23 2024 +0100[m
+[m
+    debugging weather[m
+[m
+[33mcommit c88af87cd7e4832f3a14ca79e01ce835e5ed9bcf[m[m
+Merge: ec98567 ded86d7[m
+Author: Andreas Weisberg <anw4@st-andrews.ac.uk>[m
+:[K[H[2J[H[H[2J[H[33mcommit 2778838a594b933192cc891cafa835be206edd62[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m[m
+Author: hw221 <hw221@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:43:11 2024 +0100[m
+[m
+    add new test file.[m
+[m
+[33mcommit f39764bdb963d9fc2a499b6420402ae5faba7d7e[m[m
+Author: Heejoo Shin <hs265@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 12:16:03 2024 +0100[m
+[m
+    .[m
+[m
+[33mcommit 65c8508449bde4952a58d63696306fc26cba21f9[m[m
+Author: lsk5 <lsk5.teaching.cs.st-andrews.ac.uk>[m
+Date:   Fri Apr 5 11:36:23 2024 +0100[m
+[m
+    debugging weather[m
+[m
+[33mcommit c88af87cd7e4832f3a14ca79e01ce835e5ed9bcf[m[m
+Merge: ec98567 ded86d7[m
+Author: Andreas Weisberg <anw4@st-andrews.ac.uk>[m
+:[K[KDate:   Fri Apr 5 11:34:58 2024 +0100[m
+:[K[K:[K[K:[K[K:[K[K:[K[K[m
+    Merge branch 'master' of ssh://anw4.teaching.cs.st-andrews.ac.uk:/cs/group/cs5003-p3-group-02/cs5003-p3[m
+[m
+[33mcommit ec9856712d27f2ac7842d9fc175c4ef63986ee15[m[m
+Author: Andreas Weisberg <anw4@st-andrews.ac.uk>[m
+Date:   Fri Apr 5 11:34:53 2024 +0100[m
+[m
+    updated file structure to allow testing[m
+[m
+[33mcommit ded86d7ea02e055767196fcab4ceca5765c50dcd[m[m
+Merge: 8e96065 511d194[m
+:[K[K:[K[K:[K[K:[K

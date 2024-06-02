@@ -1,0 +1,251 @@
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+
+h1{
+  font-family:"Techno";  
+  font-size: 52px;
+  color: antiquewhite;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 1);
+  text-transform: uppercase; 
+  letter-spacing: 3px;    
+  margin-top: -1%;
+}
+
+
+h2 {
+  font-family: "Techno";
+  font-size: xx-large;
+  color: #000;
+  position: relative;
+  display: inline;
+  z-index: 1;
+}
+
+  h2::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 0, 0.5);
+    transform: translateY(-50%) rotate(-2deg);
+    border-radius: 0.2em;
+  }
+
+
+
+
+/* body */
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("https://jaxfamilysportsmed.com/wp-content/uploads/2016/02/bestfriend.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+
+#main-content {
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin-right: 10%;
+  padding: 1rem; 
+}
+
+
+#startRunTime {
+  font-family:"Techno";
+  font-weight: 700;
+  color: #040145;
+  padding: 0.6rem;
+  border: 0.5px solid #ccc;
+  border-radius: 4px;
+  width: 150px;
+  margin-top: 0.3%;
+  display: inline-block;
+  background-color: #fff; 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+
+}
+
+
+#container {
+  padding: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: rgba(250, 235, 215, 0.8); 
+  font-family:"Techno";  
+}
+
+#map {
+  border-radius: 0.8rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#distance {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+#startRunDiv{
+  margin-top: -5%;
+}
+
+/* align form input boxes */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+form div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+form div label {
+  min-width: 120px;
+  margin-right: 10px;
+}
+form div:first-of-type input, form div:last-of-type input {
+  min-width: 200px;
+  margin-right: 0;
+}
+
+#startRunPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+
+#startRunButtonDiv {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#startRunButton {
+  margin: 3%;
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color:rgba(255, 183, 107, 1);
+  color: rgb(50, 21, 11);
+  font-weight: 700;
+  transition: all 0.6s ease; 
+  box-shadow: 0px 0px 60px rgba(255, 183, 107, 0.5);
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(255, 183, 107, 0.1));
+}
+
+
+
+#startRunButton:active {
+  transform: scale(0.92);
+}
+
+#startRunButton:hover {
+  background: linear-gradient(270deg, rgba(255, 183, 107, 0.8) 0%, rgba(245, 203, 147, 0.8) 100%);
+  color: rgb(4, 4, 38);
+  box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+
+}
+
+#startRunTime, #runPace, #runDescription
+{
+  font-family:"Techno"; 
+  font-weight: 700;
+  color: #030127e7;
+  margin-top: 3%;
+  padding: 0.3rem 0.3rem; 
+  border: 1px solid #d2b48c; 
+  background-color: #fff; 
+  border-radius: 0.2rem; 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1); 
+  transition: border-color 0.3s, box-shadow 0.3s; 
+
+}
+
+
+
+
+/* Navigation bar */
+#sidebar {
+  position: fixed;
+  text-align: left;
+  padding-left: 1%;
+  font-family: 'SpeedrushRegular';
+  font-size: large;
+  top: 0; 
+  right: 0; 
+  width: 300px; 
+  height: 100%;
+  background-color: #f9f9f9;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.1); 
+  z-index: 1000; 
+}
+
+#sidebar ul {
+  list-style-type: none;
+  padding: 0; 
+}
+
+#sidebar ul li a {
+  display: block;
+  padding: 10px; 
+  text-decoration: none; 
+  color: #333; 
+  border-bottom: 1px solid #eee; 
+}
+
+#sidebar ul li a:hover {
+  background-color: #eee;
+  font-family: 'SpeedrushItalic'; 
+}
+
+
+
+/*------------------------ font */
+
+@font-face {
+  font-family: 'Techno';
+  src: url('style/techno.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpaceMission';
+  src: url('style/SpaceMission.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushRegular';
+  src: url('style/SpeedrushRegular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'SpeedrushItalic';
+  src: url('style/SpeedrushItalic.otf') format('opentype');
+}
+
